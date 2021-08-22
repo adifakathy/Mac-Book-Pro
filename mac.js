@@ -34,13 +34,12 @@ function discount() {
             totalPrice.innerText = finalPrice;
             cupponInput.value = '';
         }
-        else if (promoField.value = '') {
-        
-        }
         else {
-            alert("Invalid Promo Code. Please enter valid promo code. Thank You");
-            cupponInput.value = '';
+                const alertinfo = document.getElementById('cuppon-btn');
+                alertinfo=alert('Please Enter right password');
+                cupponInput.value = '';
         }
+       
 }
 
 //button clcik
@@ -52,7 +51,8 @@ buttonClick('256gb-ssd', 'storage', 0);
 buttonClick('512gb-ssd', 'storage', 100);
 buttonClick('1tb-ssd', 'storage', 180);
 buttonClick('free-delivery', 'delivery', 0);
-buttonClick('fast-delivery', 'delivery',20);
+buttonClick('fast-delivery', 'delivery', 20);
+
 
 //promo button
 
